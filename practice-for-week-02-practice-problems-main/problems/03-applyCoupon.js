@@ -29,6 +29,14 @@ console.log(applyCoupon(20, wishList)); // => 78.4;
 
 const applyCoupon = (discount, wishList) => {
     // Your code here
+    let array = []
+    let total = 0
+    wishList.forEach((item)=> {
+        total += ((item.price- (item.price*(discount/100))))
+
+
+    })
+    return total;
 }
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS LINE**********************/

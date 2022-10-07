@@ -22,6 +22,10 @@ manyArgs(1, 2, 5, 6) // 60
 
 const manyArgs = (...args) => {
     // Your code here
+    return args.reduce((acc, curr) =>{
+        return acc*=curr;
+    })
+
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

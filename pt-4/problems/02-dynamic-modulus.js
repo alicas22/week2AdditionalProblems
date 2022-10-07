@@ -22,6 +22,10 @@
 
 function dynamicModulus(num) {
   // Your code here
+
+  return function(mod){
+    return mod % num;
+  }
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

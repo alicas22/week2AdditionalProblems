@@ -10,7 +10,18 @@
 */
 
 function characterCount(string) {
+    let newObj = {}
     
+    for (let i = 0; i < string.length; i++){
+        let key = string[i]
+        if (newObj[key] === undefined){
+            newObj[key] = 1
+        }  else{
+            newObj[key]++
+        }
+        }
+        return newObj
+
 }
 
 

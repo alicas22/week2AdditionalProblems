@@ -15,6 +15,18 @@
 
 // Your code here
 
+let discountPrices = ((priceArr, discountArr) =>{
+    let newPrices = [];
+
+    for (let i = 0; i < priceArr.length; i++){
+        newPrices.push("$"+(priceArr[i] - (priceArr[i]*discountArr[i])).toFixed(2))
+    }
+return newPrices
+
+})
+
+
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {
     module.exports = discountPrices;

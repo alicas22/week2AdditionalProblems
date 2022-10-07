@@ -19,7 +19,26 @@ str2 = 'Tom B: no Spiderman, Justin N: no Spiderman, Emily B: wrote about Spider
 
 const spiderManWriters = (str) => {
     // Your code here
+    let info = str.split(", ")
+
+    let individualArr = []
+    let noSpiderman = {}
+    for (let i = 0; i < info.length; i++){
+        individualArr.push(info[i].split(": "))
+    }
+  // console.log(individualArr)
+  individualArr.forEach((person) => {
+
+    if (person[1] === "no Spiderman") noSpiderman[person[0]] = person[1]
+
+
+  })
+  // console.log(noSpiderman)
+ return noSpiderman;
 }
+
+
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try{

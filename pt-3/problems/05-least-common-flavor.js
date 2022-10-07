@@ -13,8 +13,20 @@ Least common flavor:
 
     console.log(leastCommonFlavor({})); // prints null
 */
-
 function leastCommonFlavor(candyBag) {
+    if (Object.keys(candyBag).length === 0)  return null;
+    let names = Object.keys(candyBag);
+    let counts = Object.values(candyBag);
+    let lowest = counts[0];
+    let lowestIndex = 0;
+    counts.forEach((num, i) => {
+        if (num < lowest) {
+            lowest = num;
+            lowestIndex = i;
+        }
+
+    })
+    return names[lowestIndex];
 
 }
 
