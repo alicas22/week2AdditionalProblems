@@ -9,20 +9,6 @@
 
 */
 
-function characterCount(string) {
-    let newObj = {}
-    
-    for (let i = 0; i < string.length; i++){
-        let key = string[i]
-        if (newObj[key] === undefined){
-            newObj[key] = 1
-        }  else{
-            newObj[key]++
-        }
-        }
-        return newObj
-
-}
 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
@@ -32,3 +18,47 @@ try {
 } catch (e) {
     module.exports = null;
 }
+
+
+
+
+
+
+
+
+
+
+// let newObj = {}
+
+// for (let i = 0; i < string.length; i++){
+    //     let key = string[i]
+    //     if (newObj[key] === undefined){
+        //         newObj[key] = 1
+        //     }  else{
+            //         newObj[key]++
+            //     }
+            //     }
+            //     return newObj
+// }
+
+
+
+            // function characterCount(string) {
+
+
+            // let charCount = {};
+            // for (let chars in string){
+            //     let i = string[chars];
+            //     if (charCount[i] === undefined){
+            //         charCount[i] = 1;
+            //     } else {
+            //         charCount[i]++
+            //     }
+
+            // }
+            // return charCount;
+
+
+
+
+            // }

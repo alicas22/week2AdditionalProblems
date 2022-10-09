@@ -19,14 +19,12 @@ manyArgs(1, 2, 5, 6) // 60
 
 
 ***********************************************************************/
-
-const manyArgs = (...args) => {
-    // Your code here
-    return args.reduce((acc, curr) =>{
-        return acc*=curr;
+let manyArgs = ((...args) =>{
+    return args.reduce((prev, curr) =>{
+        return prev *=curr;
     })
 
-}
+})
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try{
@@ -34,3 +32,27 @@ try{
 } catch(e) {
     module.exports = null;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const manyArgs = (...args) => {
+//     // Your code here
+//     return args.reduce((acc, curr) =>{
+//         return acc*=curr;
+//     })
+
+// }

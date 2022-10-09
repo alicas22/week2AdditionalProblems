@@ -18,9 +18,59 @@
     console.log(itemsWithinBudget(200, items2)) // prints ['omakase bento box', 'medicine']
 */
 
-const itemsWithinBudget = (budget, items) => {
-    return items.filter(item => item.price <= budget).map(item => item.name);
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const itemsWithinBudget = (budget, items) => {
+//     return items.filter(item => item.price <= budget).map(item => item.name);
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // let itemsWithinBudget = ((budget, items) => {
 //     // return empty array if array empty
 //     if(budget.length === 0) return [];

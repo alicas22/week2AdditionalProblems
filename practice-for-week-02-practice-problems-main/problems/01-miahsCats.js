@@ -19,26 +19,21 @@ miahsCats(obj2) // 3
 obj3 = {"Princess": "So much sass, cute AND fluffy", "adorable-boy": "Cute and funny"}
 miahsCats(obj3) // 3
 
-
-
 ***********************************************************************/
+let miahsCats =((obj) =>{
+    let count = 0;
+    let entries = Object.entries(obj)
+   
+    entries.forEach((arr) =>{
+        arr.forEach((string) =>{
+          if(string.toLowerCase().includes("cute") || string.toLowerCase().includes("adorable")) count++
+    	})
+    })
 
-const miahsCats = obj => {
-    // Your code here
-    let count = 0
-    let keys = Object.keys(obj)
-    let vals = Object.values(obj)
+    return count
 
-    keys.forEach((item) =>{
-       if (item.toLowerCase().includes("cute") || item.toLowerCase().includes("adorable")) count++;
-         })
-    vals.forEach((item) =>{
-        if (item.toLowerCase().includes("cute") || item.toLowerCase().includes("adorable")) count++;
-         })
 
-  console.log(count)
-        return count
-    }
+})
 
 
 
@@ -48,4 +43,43 @@ try{
     module.exports = miahsCats;
 } catch(e) {
     module.exports = null;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
+
+// const miahsCats = obj => {
+//     // Your code here
+//     let count = 0
+//     let keys = Object.keys(obj)
+//     let vals = Object.values(obj)
+
+//     keys.forEach((item) =>{
+//        if (item.toLowerCase().includes("cute") || item.toLowerCase().includes("adorable")) count++;
+//          })
+//     vals.forEach((item) =>{
+//         if (item.toLowerCase().includes("cute") || item.toLowerCase().includes("adorable")) count++;
+//          })
+
+//   console.log(count)
+//         return count
+//     }

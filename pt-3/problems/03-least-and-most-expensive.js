@@ -12,28 +12,8 @@ Least and Most Expensive Toys:
     console.log(leastAndMostExpensive(catalog2)); // prints ['doll', 'bicycle']
 */
 
-function leastAndMostExpensive(catalog) {
-    let keys = Object.keys(catalog);
-    let values = Object.values(catalog)
-    let cheapest = values[0]
-    let cheapIndex = 0
-    let expensive = values[0]
-    let expensiveIndex = 0
-        values.forEach((price, i) =>{
-            if (cheapest > price){
-                cheapest = price;
-                cheapIndex = i
-            }
-            if ( expensive< price ) {
-                expensive = price;
-                expensiveIndex = i;
-        }
-    })
-    
-    let array = [keys[cheapIndex], keys[expensiveIndex]]
-    return array
 
-}
+
 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
@@ -43,3 +23,46 @@ try {
 } catch (e) {
     module.exports = null;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function leastAndMostExpensive(catalog) {
+//     let keys = Object.keys(catalog);
+//     let values = Object.values(catalog)
+//     let cheapest = values[0]
+//     let cheapIndex = 0
+//     let expensive = values[0]
+//     let expensiveIndex = 0
+//         values.forEach((price, i) =>{
+//             if (cheapest > price){
+//                 cheapest = price;
+//                 cheapIndex = i
+//             }
+//             if ( expensive< price ) {
+//                 expensive = price;
+//                 expensiveIndex = i;
+//         }
+//     })
+
+//     let array = [keys[cheapIndex], keys[expensiveIndex]]
+//     return array
+
+// }

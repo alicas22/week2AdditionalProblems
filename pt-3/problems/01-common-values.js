@@ -13,16 +13,10 @@
 
 */
 
-function commonValues(obj1, obj2) {
-    const result = [];
 
-    Object.values(obj1).forEach (val => {
-        if (Object.values(obj2).includes(val)) {
-            result.push(val);
-        }
-    })
-    return result
-}
+
+
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
@@ -31,3 +25,38 @@ try {
 } catch (e) {
     module.exports = null;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+// const result = [];
+
+// Object.values(obj1).forEach (val => {
+    //     if (Object.values(obj2).includes(val)) {
+//         result.push(val);
+//     }
+// })
+// return result
+
+
+
+
+// function commonValues(obj1, obj2) {
+//     let newArr = [];
+//     let values1 = Object.values(obj1)
+//     let values2 = Object.values(obj2)
+//     for (let i = 0; i < values1.length; i++){
+
+//     if(values2.includes(values1[i])) newArr.push(values1[i])
+
+//     }
+//     return newArr;
+// }

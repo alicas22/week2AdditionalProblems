@@ -27,14 +27,13 @@ newDice3(2); // 24
 
 ***********************************************************************/
 
-const dynamicDice = sides => {
-  // Your code here
 
+let dynamicDice = ((sides) =>{
 
-  return function(num) {
-    return num*sides
+  return function(otherSide){
+    return sides*otherSide;
   }
-}
+})
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try{
@@ -42,3 +41,18 @@ try{
 } catch {
   module.exports = null;
 }
+
+
+
+
+
+
+
+// const dynamicDice = sides => {
+//   // Your code here
+
+
+//   return function(num) {
+//     return num*sides
+//   }
+// }
